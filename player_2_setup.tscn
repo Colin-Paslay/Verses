@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://qgbfop134sh5"]
+
+[node name="Player 2 Setup" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(-576, 0)
+scale = Vector2(3, 3)
+color = Color(0, 0, 0.392157, 1)
+polygon = PackedVector2Array(298.667, 0, 576, 0, 576, 216, 277.333, 216)
+
+[node name="Polygon2D2" type="Polygon2D" parent="."]
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(896, 0, 1152, 0, 1152, 648, 832, 648)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Polygon2D2"]
+offset_left = 920.0
+offset_top = 160.0
+offset_right = 1128.0
+offset_bottom = 608.0
+alignment = 1
+
+[node name="Affenity" type="Label" parent="Polygon2D2/VBoxContainer"]
+layout_mode = 2
+text = "Affenity: "
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Polygon2D2/VBoxContainer"]
+layout_mode = 2
+
+[node name="HP Display" type="Label" parent="Polygon2D2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "HP: "
+
+[node name="PP Display" type="Label" parent="Polygon2D2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "PP: "
+
+[node name="SP Display" type="Label" parent="Polygon2D2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "SP: "
+
+[node name="Actions" type="Label" parent="Polygon2D2/VBoxContainer"]
+layout_mode = 2
+text = "Speed:"
+
+[node name="Speed" type="Label" parent="Polygon2D2/VBoxContainer"]
+layout_mode = 2
+text = "Speed Range: "
+
+[node name="Panic Type" type="Label" parent="Polygon2D2/VBoxContainer"]
+layout_mode = 2
+text = "Panic Type:"
+
+[node name="BRes" type="Label" parent="Polygon2D2/VBoxContainer"]
+layout_mode = 2
+text = "Blunt Resistance: "
+
+[node name="SRes" type="Label" parent="Polygon2D2/VBoxContainer"]
+layout_mode = 2
+text = "Slash Resistance: "
+
+[node name="PRes" type="Label" parent="Polygon2D2/VBoxContainer"]
+layout_mode = 2
+text = "Pierce Resistance:"
+
+[node name="RedRes" type="Label" parent="Polygon2D2/VBoxContainer"]
+layout_mode = 2
+text = "Red Resistance:"
+
+[node name="OrangeRes" type="Label" parent="Polygon2D2/VBoxContainer"]
+layout_mode = 2
+text = "Orange Resistance:"
+
+[node name="YellowRes" type="Label" parent="Polygon2D2/VBoxContainer"]
+layout_mode = 2
+text = "Yellow Resistance: "
+
+[node name="GreenRes" type="Label" parent="Polygon2D2/VBoxContainer"]
+layout_mode = 2
+text = "Green Resistance:"
+
+[node name="BlueRes" type="Label" parent="Polygon2D2/VBoxContainer"]
+layout_mode = 2
+text = "Blue Resistance: "
+
+[node name="IndigoRes" type="Label" parent="Polygon2D2/VBoxContainer"]
+layout_mode = 2
+text = "Indigo Resistance:"
+
+[node name="VioletRes" type="Label" parent="Polygon2D2/VBoxContainer"]
+layout_mode = 2
+text = "Violet Resistance:"
+
+[node name="Skills" type="Button" parent="Polygon2D2"]
+offset_left = 920.0
+offset_top = 16.0
+offset_right = 1130.0
+offset_bottom = 136.0
+text = "Skills"

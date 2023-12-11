@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwin50u445iri"]
+
+[ext_resource type="Texture2D" uid="uid://bpfp3ydb7q7ji" path="res://icon.svg" id="1_02t4e"]
+[ext_resource type="Script" path="res://p_1.gd" id="1_dtlw7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oy1mc"]
+atlas = ExtResource("1_02t4e")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oqmd7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oy1mc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="P1" type="CharacterBody2D"]
+script = ExtResource("1_dtlw7")
+
+[node name="Speed" type="Button" parent="."]
+custom_minimum_size = Vector2(50, 50)
+offset_left = 40.0
+offset_top = -72.0
+offset_right = 90.0
+offset_bottom = -22.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(8, 0, 120, 0, 128, 8, 128, 120, 120, 128, 8, 128, 0, 120, 0, 8)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(64, 64)
+sprite_frames = SubResource("SpriteFrames_oqmd7")
+
+[connection signal="pressed" from="Speed" to="." method="_on_speed_pressed"]

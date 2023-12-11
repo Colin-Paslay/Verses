@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=3 uid="uid://dmm52op3x7v61"]
+
+[ext_resource type="Script" path="res://setup.gd" id="1_tm3hy"]
+[ext_resource type="PackedScene" uid="uid://dr3k1j1alf3jy" path="res://player_1_setup.tscn" id="2_svsk5"]
+[ext_resource type="PackedScene" uid="uid://qgbfop134sh5" path="res://player_2_setup.tscn" id="3_07p4y"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_6e2e1"]
+
+[node name="Setup" type="Node2D"]
+script = ExtResource("1_tm3hy")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(1, 0)
+color = Color(0, 0, 0, 1)
+texture = SubResource("CanvasTexture_6e2e1")
+polygon = PackedVector2Array(-1, 0, 319, 0, 255, 648, -1, 648)
+
+[node name="Player 2" type="Button" parent="Polygon2D"]
+offset_left = 39.0
+offset_top = 312.0
+offset_right = 249.0
+offset_bottom = 432.0
+text = "Player 2"
+
+[node name="Player 2 Setup" parent="Polygon2D/Player 2" instance=ExtResource("3_07p4y")]
+layout_mode = 1
+offset_left = -40.0
+offset_top = -312.0
+offset_right = -40.0
+offset_bottom = -312.0
+
+[node name="Player 1" type="Button" parent="Polygon2D"]
+offset_left = 39.0
+offset_top = 176.0
+offset_right = 249.0
+offset_bottom = 296.0
+text = "Player 1"
+
+[node name="Player 1 Setup" parent="Polygon2D/Player 1" instance=ExtResource("2_svsk5")]
+layout_mode = 1
+offset_left = -40.0
+offset_top = -176.0
+offset_right = -40.0
+offset_bottom = -176.0
+
+[node name="Quit" type="Button" parent="Polygon2D"]
+offset_left = 39.0
+offset_top = 448.0
+offset_right = 249.0
+offset_bottom = 568.0
+text = "Quit"
+
+[node name="Begin" type="Button" parent="Polygon2D"]
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 250.0
+offset_bottom = 160.0
+tooltip_text = "Takes you to start menu"
+button_mask = 7
+text = "BEGIN!"
+
+[connection signal="pressed" from="Polygon2D/Player 2" to="." method="_on_player_2_pressed"]
+[connection signal="pressed" from="Polygon2D/Player 1" to="." method="_on_player_1_pressed"]
+[connection signal="pressed" from="Polygon2D/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Polygon2D/Begin" to="." method="_on_button_pressed"]

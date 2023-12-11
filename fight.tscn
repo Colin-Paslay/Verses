@@ -1,0 +1,633 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf5tau0ngkn2w"]
+
+[ext_resource type="Script" path="res://fight.gd" id="1_of1ws"]
+[ext_resource type="PackedScene" uid="uid://dwin50u445iri" path="res://p_1.tscn" id="2_6w32m"]
+
+[node name="Fight" type="Node2D"]
+script = ExtResource("1_of1ws")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Start!" type="Button" parent="CanvasLayer"]
+offset_left = 528.0
+offset_top = 16.0
+offset_right = 628.0
+offset_bottom = 66.0
+text = "Start!"
+
+[node name="Red_Guy" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -466.0
+offset_top = -150.0
+offset_right = 466.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 28
+
+[node name="Button" type="Button" parent="CanvasLayer/Red_Guy"]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="CanvasLayer/Red_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="CanvasLayer/Red_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="CanvasLayer/Red_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="CanvasLayer/Red_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="CanvasLayer/Red_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="CanvasLayer/Red_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="CanvasLayer/Red_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="CanvasLayer/Red_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Orange_Guy" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -562.0
+offset_top = -150.0
+offset_right = 562.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 28
+
+[node name="Button" type="Button" parent="CanvasLayer/Orange_Guy"]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="CanvasLayer/Orange_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="CanvasLayer/Orange_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="CanvasLayer/Orange_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="CanvasLayer/Orange_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="CanvasLayer/Orange_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="CanvasLayer/Orange_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="CanvasLayer/Orange_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="CanvasLayer/Orange_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Yellow_Guy" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -562.0
+offset_top = -150.0
+offset_right = 562.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 28
+
+[node name="Button" type="Button" parent="CanvasLayer/Yellow_Guy"]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="CanvasLayer/Yellow_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="CanvasLayer/Yellow_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="CanvasLayer/Yellow_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="CanvasLayer/Yellow_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="CanvasLayer/Yellow_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="CanvasLayer/Yellow_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="CanvasLayer/Yellow_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="CanvasLayer/Yellow_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Green_Guy" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -562.0
+offset_top = -150.0
+offset_right = 562.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 28
+
+[node name="Button" type="Button" parent="CanvasLayer/Green_Guy"]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="CanvasLayer/Green_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="CanvasLayer/Green_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="CanvasLayer/Green_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="CanvasLayer/Green_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="CanvasLayer/Green_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="CanvasLayer/Green_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="CanvasLayer/Green_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="CanvasLayer/Green_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Blue_Guy" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -466.0
+offset_top = -150.0
+offset_right = 466.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 28
+
+[node name="Button" type="Button" parent="CanvasLayer/Blue_Guy"]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="CanvasLayer/Blue_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="CanvasLayer/Blue_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="CanvasLayer/Blue_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="CanvasLayer/Blue_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="CanvasLayer/Blue_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="CanvasLayer/Blue_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="CanvasLayer/Blue_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="CanvasLayer/Blue_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Indigo_Guy" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -466.0
+offset_top = -150.0
+offset_right = 466.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 28
+
+[node name="Button" type="Button" parent="CanvasLayer/Indigo_Guy"]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="CanvasLayer/Indigo_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="CanvasLayer/Indigo_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="CanvasLayer/Indigo_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="CanvasLayer/Indigo_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="CanvasLayer/Indigo_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="CanvasLayer/Indigo_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="CanvasLayer/Indigo_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="CanvasLayer/Indigo_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Violet_Guy" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -466.0
+offset_top = -150.0
+offset_right = 466.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 28
+
+[node name="Button" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Fast_Guy" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -466.0
+offset_top = -150.0
+offset_right = 466.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 28
+
+[node name="Button" type="Button" parent="CanvasLayer/Fast_Guy"]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="CanvasLayer/Fast_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="CanvasLayer/Fast_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="CanvasLayer/Fast_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="CanvasLayer/Fast_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="CanvasLayer/Fast_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="CanvasLayer/Fast_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="CanvasLayer/Fast_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="CanvasLayer/Fast_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Sword_Guy" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -466.0
+offset_top = -150.0
+offset_right = 466.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 28
+
+[node name="Button" type="Button" parent="CanvasLayer/Sword_Guy"]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="CanvasLayer/Sword_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="CanvasLayer/Sword_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="CanvasLayer/Sword_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="CanvasLayer/Sword_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="CanvasLayer/Sword_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="CanvasLayer/Sword_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="CanvasLayer/Sword_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="CanvasLayer/Sword_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Shield_Guy" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -466.0
+offset_top = -150.0
+offset_right = 466.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 28
+
+[node name="Button" type="Button" parent="CanvasLayer/Shield_Guy"]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="CanvasLayer/Shield_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="CanvasLayer/Shield_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="CanvasLayer/Shield_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="CanvasLayer/Shield_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="CanvasLayer/Shield_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="CanvasLayer/Shield_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="CanvasLayer/Shield_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="CanvasLayer/Shield_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Everything_Guy" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -466.0
+offset_top = -150.0
+offset_right = 466.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 28
+
+[node name="Button" type="Button" parent="CanvasLayer/Everything_Guy"]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="CanvasLayer/Everything_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="CanvasLayer/Everything_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="CanvasLayer/Everything_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="CanvasLayer/Everything_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="CanvasLayer/Everything_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="CanvasLayer/Everything_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="CanvasLayer/Everything_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="CanvasLayer/Everything_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Medic_Guy" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -466.0
+offset_top = -150.0
+offset_right = 466.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 28
+
+[node name="Button" type="Button" parent="CanvasLayer/Medic_Guy"]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="CanvasLayer/Medic_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="CanvasLayer/Medic_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="CanvasLayer/Medic_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="CanvasLayer/Medic_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="CanvasLayer/Medic_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="CanvasLayer/Medic_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="CanvasLayer/Medic_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="CanvasLayer/Medic_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="P1" parent="." instance=ExtResource("2_6w32m")]
+position = Vector2(882.806, 326.232)
+
+[connection signal="pressed" from="CanvasLayer/Start!" to="." method="_on_start_pressed"]
