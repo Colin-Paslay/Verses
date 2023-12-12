@@ -65,6 +65,7 @@ layout_mode = 2
 text = "Slash Resistance: "
 
 [node name="PRes" type="Label" parent="Polygon2D2/VBoxContainer"]
+visible = false
 layout_mode = 2
 text = "Pierce Resistance:"
 

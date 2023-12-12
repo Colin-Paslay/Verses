@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bf5tau0ngkn2w"]
+[gd_scene load_steps=4 format=3 uid="uid://bf5tau0ngkn2w"]
 
 [ext_resource type="Script" path="res://fight.gd" id="1_of1ws"]
 [ext_resource type="PackedScene" uid="uid://dwin50u445iri" path="res://p_1.tscn" id="2_6w32m"]
+[ext_resource type="PackedScene" uid="uid://ch23ytorm0x7n" path="res://p_2.tscn" id="3_p4cxa"]
 
 [node name="Fight" type="Node2D"]
 script = ExtResource("1_of1ws")
@@ -9,10 +10,14 @@ script = ExtResource("1_of1ws")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Start!" type="Button" parent="CanvasLayer"]
-offset_left = 528.0
-offset_top = 16.0
-offset_right = 628.0
-offset_bottom = 66.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -50.0
+offset_top = 100.0
+offset_right = 50.0
+offset_bottom = 150.0
+grow_horizontal = 2
 text = "Start!"
 
 [node name="Red_Guy" type="HBoxContainer" parent="CanvasLayer"]
@@ -628,6 +633,9 @@ custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 
 [node name="P1" parent="." instance=ExtResource("2_6w32m")]
-position = Vector2(882.806, 326.232)
+position = Vector2(320, 576)
+
+[node name="P2" parent="." instance=ExtResource("3_p4cxa")]
+position = Vector2(1408, 576)
 
 [connection signal="pressed" from="CanvasLayer/Start!" to="." method="_on_start_pressed"]

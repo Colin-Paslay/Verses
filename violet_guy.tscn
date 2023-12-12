@@ -1,0 +1,66 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg7ttf37ycktb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_28o5q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dhe18"]
+
+[node name="Violet_Guy" type="CharacterBody2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Violet_Guy" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -466.0
+offset_top = -150.0
+offset_right = 466.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 28
+
+[node name="Button" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="CanvasLayer/Violet_Guy"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_28o5q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_dhe18")
