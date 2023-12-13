@@ -1,4 +1,8 @@
-[gd_scene format=3 uid="uid://yj6ckyrbpwpx"]
+[gd_scene load_steps=3 format=3 uid="uid://yj6ckyrbpwpx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7auwy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wwga7"]
 
 [node name="Sword_Guy" type="CharacterBody2D"]
 
@@ -56,5 +60,7 @@ custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_7auwy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_wwga7")

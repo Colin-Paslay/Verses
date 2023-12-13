@@ -33,9 +33,3 @@ func _ready():
 	var amp_resonance = 1
 func _physics_process(delta):
 	speed_range = randi_range(1, 4)
-func _on_speed_pressed():
-	if global.turnstart == true:
-		speed.text += str(speed_range)
-		global.action_slots -= 1
-	else:
-		pass
