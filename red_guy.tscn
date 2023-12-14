@@ -1,10 +1,96 @@
-[gd_scene load_steps=4 format=3 uid="uid://sejw11vwo3h4"]
+[gd_scene load_steps=12 format=3 uid="uid://sejw11vwo3h4"]
 
 [ext_resource type="Script" path="res://red_guy.gd" id="1_ykt82"]
+[ext_resource type="Texture2D" uid="uid://cnfr1rfwfmnbc" path="res://New Piskel (2).png" id="2_ao0g2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_107t5"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_8368i"]
+atlas = ExtResource("2_ao0g2")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e5h60"]
+atlas = ExtResource("2_ao0g2")
+region = Rect2(128, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h3ge0"]
+atlas = ExtResource("2_ao0g2")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kgs1k"]
+atlas = ExtResource("2_ao0g2")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4spov"]
+atlas = ExtResource("2_ao0g2")
+region = Rect2(160, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5i7qa"]
+atlas = ExtResource("2_ao0g2")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ei1ph"]
+atlas = ExtResource("2_ao0g2")
+region = Rect2(192, 192, 32, 32)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_vggeb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8368i")
+}],
+"loop": true,
+"name": &"approach",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e5h60")
+}],
+"loop": true,
+"name": &"attack_blunt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h3ge0")
+}],
+"loop": true,
+"name": &"attack_pierce",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kgs1k")
+}],
+"loop": true,
+"name": &"attack_slash",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4spov")
+}],
+"loop": true,
+"name": &"block",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5i7qa")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ei1ph")
+}],
+"loop": true,
+"name": &"dodge",
+"speed": 5.0
+}]
 
 [node name="Red_Guy" type="CharacterBody2D"]
 script = ExtResource("1_ykt82")
@@ -66,4 +152,61 @@ layout_mode = 2
 shape = SubResource("RectangleShape2D_107t5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(6, 6)
 sprite_frames = SubResource("SpriteFrames_vggeb")
+
+[node name="Resources" type="HBoxContainer" parent="AnimatedSprite2D"]
+anchors_preset = -1
+anchor_top = 0.833
+anchor_bottom = 0.833
+offset_left = -20.0
+offset_top = -6.656
+offset_right = 91.0
+offset_bottom = 33.344
+scale = Vector2(0.2, 0.2)
+
+[node name="HP" type="Label" parent="AnimatedSprite2D/Resources"]
+layout_mode = 2
+text = "HP: 100"
+
+[node name="PP" type="Label" parent="AnimatedSprite2D/Resources"]
+layout_mode = 2
+text = "PP: 50"
+
+[node name="Sanity" type="Label" parent="AnimatedSprite2D/Resources"]
+layout_mode = 2
+text = "SP: 0"
+
+[node name="Stamina" type="HBoxContainer" parent="AnimatedSprite2D"]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 53.0
+offset_bottom = 20.0
+scale = Vector2(0.2, 0.2)
+
+[node name="Stamina" type="Label" parent="AnimatedSprite2D/Stamina"]
+layout_mode = 2
+text = "Stamina: 9"
+
+[node name="Speed Slots" type="HBoxContainer" parent="AnimatedSprite2D"]
+offset_left = -15.0
+offset_top = -30.0
+offset_right = 89.0
+offset_bottom = 10.0
+scale = Vector2(0.2, 0.2)
+
+[node name="Slot 1" type="Button" parent="AnimatedSprite2D/Speed Slots"]
+layout_mode = 2
+text = "1-8"
+
+[node name="Slot 2" type="Button" parent="AnimatedSprite2D/Speed Slots"]
+layout_mode = 2
+text = "1-8"
+
+[node name="Slot 3" type="Button" parent="AnimatedSprite2D/Speed Slots"]
+layout_mode = 2
+text = "1-8"
+
+[connection signal="pressed" from="AnimatedSprite2D/Speed Slots/Slot 1" to="." method="_on_slot_1_pressed"]
+[connection signal="pressed" from="AnimatedSprite2D/Speed Slots/Slot 2" to="." method="_on_slot_2_pressed"]
+[connection signal="pressed" from="AnimatedSprite2D/Speed Slots/Slot 3" to="." method="_on_slot_3_pressed"]

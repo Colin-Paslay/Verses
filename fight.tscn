@@ -1,18 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://bf5tau0ngkn2w"]
+[gd_scene load_steps=3 format=3 uid="uid://bf5tau0ngkn2w"]
 
 [ext_resource type="Script" path="res://fight.gd" id="1_of1ws"]
 [ext_resource type="PackedScene" uid="uid://sejw11vwo3h4" path="res://red_guy.tscn" id="2_5mbml"]
-[ext_resource type="PackedScene" uid="uid://cu8djii2hrd42" path="res://orange_guy.tscn" id="3_72hmk"]
-[ext_resource type="PackedScene" uid="uid://cf5qmwvrfl1px" path="res://yellow_guy.tscn" id="4_f8wvj"]
-[ext_resource type="PackedScene" uid="uid://clch3yb70wjmk" path="res://green_guy.tscn" id="5_n0kh3"]
-[ext_resource type="PackedScene" uid="uid://mh3sy3w4qbvc" path="res://blue_guy.tscn" id="6_ogo6r"]
-[ext_resource type="PackedScene" uid="uid://b22uvv1nonroa" path="res://indigo_guy.tscn" id="7_aqimr"]
-[ext_resource type="PackedScene" uid="uid://bg7ttf37ycktb" path="res://violet_guy.tscn" id="8_ydpgo"]
-[ext_resource type="PackedScene" uid="uid://yj6ckyrbpwpx" path="res://sword_guy.tscn" id="9_mnfui"]
-[ext_resource type="PackedScene" uid="uid://jisjwaoncrxn" path="res://shield_guy.tscn" id="10_iw282"]
-[ext_resource type="PackedScene" uid="uid://wc6em4t3yaf2" path="res://fast_guy.tscn" id="11_lw80l"]
-[ext_resource type="PackedScene" uid="uid://g85vyju24dn" path="res://everything_guy.tscn" id="12_nhkpk"]
-[ext_resource type="PackedScene" uid="uid://byoclco47vcea" path="res://medic_guy.tscn" id="13_ipqga"]
 
 [node name="Fight" type="Node2D"]
 script = ExtResource("1_of1ws")
@@ -29,75 +18,6 @@ grow_horizontal = 2
 text = "Start!"
 
 [node name="Red_Guy" parent="." instance=ExtResource("2_5mbml")]
-position = Vector2(-184, 8)
-
-[node name="Orange_Guy" parent="." instance=ExtResource("3_72hmk")]
-position = Vector2(-184, 72)
-
-[node name="Yellow_Guy" parent="." instance=ExtResource("4_f8wvj")]
-position = Vector2(-184, 136)
-
-[node name="Green_Guy" parent="." instance=ExtResource("5_n0kh3")]
-position = Vector2(-184, 200)
-
-[node name="Blue_Guy" parent="." instance=ExtResource("6_ogo6r")]
-position = Vector2(-184, 264)
-
-[node name="Indigo_Guy" parent="." instance=ExtResource("7_aqimr")]
-position = Vector2(-184, 328)
-
-[node name="Violet_Guy" parent="." instance=ExtResource("8_ydpgo")]
-position = Vector2(-184, 392)
-
-[node name="Sword_Guy" parent="." instance=ExtResource("9_mnfui")]
-position = Vector2(-184, 456)
-
-[node name="Shield_Guy" parent="." instance=ExtResource("10_iw282")]
-position = Vector2(-184, 520)
-
-[node name="Fast_Guy" parent="." instance=ExtResource("11_lw80l")]
-position = Vector2(-184, 584)
-
-[node name="Everything_Guy" parent="." instance=ExtResource("12_nhkpk")]
-position = Vector2(-184, 648)
-
-[node name="Medic_Guy" parent="." instance=ExtResource("13_ipqga")]
-position = Vector2(-184, 712)
-
-[node name="Red_Guy2" parent="." instance=ExtResource("2_5mbml")]
-position = Vector2(2104, 8)
-
-[node name="Orange_Guy2" parent="." instance=ExtResource("3_72hmk")]
-position = Vector2(2104, 72)
-
-[node name="Yellow_Guy2" parent="." instance=ExtResource("4_f8wvj")]
-position = Vector2(2104, 136)
-
-[node name="Green_Guy2" parent="." instance=ExtResource("5_n0kh3")]
-position = Vector2(2104, 200)
-
-[node name="Blue_Guy2" parent="." instance=ExtResource("6_ogo6r")]
-position = Vector2(2104, 264)
-
-[node name="Indigo_Guy2" parent="." instance=ExtResource("7_aqimr")]
-position = Vector2(2104, 328)
-
-[node name="Violet_Guy2" parent="." instance=ExtResource("8_ydpgo")]
-position = Vector2(2104, 392)
-
-[node name="Sword_Guy2" parent="." instance=ExtResource("9_mnfui")]
-position = Vector2(2104, 456)
-
-[node name="Shield_Guy2" parent="." instance=ExtResource("10_iw282")]
-position = Vector2(2104, 520)
-
-[node name="Fast_Guy2" parent="." instance=ExtResource("11_lw80l")]
-position = Vector2(2104, 584)
-
-[node name="Everything_Guy2" parent="." instance=ExtResource("12_nhkpk")]
-position = Vector2(2104, 648)
-
-[node name="Medic_Guy2" parent="." instance=ExtResource("13_ipqga")]
-position = Vector2(2104, 712)
+position = Vector2(200, 672)
 
 [connection signal="pressed" from="Start!" to="." method="_on_start_pressed"]
