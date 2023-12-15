@@ -55,3 +55,4 @@ func _on_slot_3_pressed():
 	if global.turnstart == true and $CanvasLayer/Red_Guy.hidden:
 		$CanvasLayer/Red_Guy.show()
 		slot_check = 3
+

@@ -112,7 +112,7 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 28
 
-[node name="Button" type="Button" parent="CanvasLayer/Red_Guy"]
+[node name="Red_Slash" type="Button" parent="CanvasLayer/Red_Guy"]
 custom_minimum_size = Vector2(100, 150)
 layout_mode = 2
 
@@ -207,6 +207,7 @@ text = "1-8"
 layout_mode = 2
 text = "1-8"
 
+[connection signal="pressed" from="CanvasLayer/Red_Guy/Red_Slash" to="." method="_on_red_slash_pressed"]
 [connection signal="pressed" from="AnimatedSprite2D/Speed Slots/Slot 1" to="." method="_on_slot_1_pressed"]
 [connection signal="pressed" from="AnimatedSprite2D/Speed Slots/Slot 2" to="." method="_on_slot_2_pressed"]
 [connection signal="pressed" from="AnimatedSprite2D/Speed Slots/Slot 3" to="." method="_on_slot_3_pressed"]
