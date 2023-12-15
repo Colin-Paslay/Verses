@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bf5tau0ngkn2w"]
+[gd_scene load_steps=4 format=3 uid="uid://bf5tau0ngkn2w"]
 
 [ext_resource type="Script" path="res://fight.gd" id="1_of1ws"]
-[ext_resource type="PackedScene" uid="uid://sejw11vwo3h4" path="res://red_guy.tscn" id="2_5mbml"]
+[ext_resource type="PackedScene" uid="uid://gvbpk7qftwfd" path="res://p_1_group.tscn" id="2_81rul"]
+[ext_resource type="PackedScene" uid="uid://cg4fulpj3aukw" path="res://p_2_group.tscn" id="3_5wxmo"]
 
 [node name="Fight" type="Node2D"]
 script = ExtResource("1_of1ws")
@@ -17,11 +18,10 @@ offset_bottom = 150.0
 grow_horizontal = 2
 text = "Start!"
 
-[node name="Red_Guy" parent="." instance=ExtResource("2_5mbml")]
-position = Vector2(200, 672)
+[node name="P1_Group" parent="." instance=ExtResource("2_81rul")]
 
-[node name="P1_Group" type="Node2D" parent="."]
+[node name="P2_Group" parent="." instance=ExtResource("3_5wxmo")]
+position = Vector2(1066.03, 449.635)
 
-[node name="P2_Group" type="Node2D" parent="."]
-
+[connection signal="turnstart" from="." to="P1_Group" method="_on_fight_turnstart"]
 [connection signal="pressed" from="Start!" to="." method="_on_start_pressed"]

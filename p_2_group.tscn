@@ -1,0 +1,54 @@
+[gd_scene load_steps=14 format=3 uid="uid://cg4fulpj3aukw"]
+
+[ext_resource type="Script" path="res://P2_Group.gd" id="1_uebjn"]
+[ext_resource type="PackedScene" uid="uid://sejw11vwo3h4" path="res://red_guy.tscn" id="2_45qt5"]
+[ext_resource type="PackedScene" uid="uid://cu8djii2hrd42" path="res://orange_guy.tscn" id="3_tjf60"]
+[ext_resource type="PackedScene" uid="uid://cf5qmwvrfl1px" path="res://yellow_guy.tscn" id="4_87ur8"]
+[ext_resource type="PackedScene" uid="uid://clch3yb70wjmk" path="res://green_guy.tscn" id="5_1lslk"]
+[ext_resource type="PackedScene" uid="uid://mh3sy3w4qbvc" path="res://blue_guy.tscn" id="6_n8bvc"]
+[ext_resource type="PackedScene" uid="uid://b22uvv1nonroa" path="res://indigo_guy.tscn" id="7_ly0kr"]
+[ext_resource type="PackedScene" uid="uid://bg7ttf37ycktb" path="res://violet_guy.tscn" id="8_3x1eq"]
+[ext_resource type="PackedScene" uid="uid://yj6ckyrbpwpx" path="res://sword_guy.tscn" id="9_g1y3u"]
+[ext_resource type="PackedScene" uid="uid://jisjwaoncrxn" path="res://shield_guy.tscn" id="10_8bykx"]
+[ext_resource type="PackedScene" uid="uid://wc6em4t3yaf2" path="res://fast_guy.tscn" id="11_idon1"]
+[ext_resource type="PackedScene" uid="uid://byoclco47vcea" path="res://medic_guy.tscn" id="12_7bo6s"]
+[ext_resource type="PackedScene" uid="uid://g85vyju24dn" path="res://everything_guy.tscn" id="13_p4s0y"]
+
+[node name="P2_Group" type="Node2D"]
+script = ExtResource("1_uebjn")
+
+[node name="Red_Guy" parent="." instance=ExtResource("2_45qt5")]
+position = Vector2(1066.03, 449.635)
+
+[node name="Orange_Guy" parent="." instance=ExtResource("3_tjf60")]
+position = Vector2(1066.03, 449.635)
+
+[node name="Yellow_Guy" parent="." instance=ExtResource("4_87ur8")]
+position = Vector2(1066.03, 449.635)
+
+[node name="Green_Guy" parent="." instance=ExtResource("5_1lslk")]
+position = Vector2(1066.03, 449.635)
+
+[node name="Blue_Guy" parent="." instance=ExtResource("6_n8bvc")]
+position = Vector2(1066.03, 449.635)
+
+[node name="Indigo_Guy" parent="." instance=ExtResource("7_ly0kr")]
+position = Vector2(1066.03, 449.635)
+
+[node name="Violet_Guy" parent="." instance=ExtResource("8_3x1eq")]
+position = Vector2(1066.03, 449.635)
+
+[node name="Sword_Guy" parent="." instance=ExtResource("9_g1y3u")]
+position = Vector2(1066.03, 449.635)
+
+[node name="Shield_Guy" parent="." instance=ExtResource("10_8bykx")]
+position = Vector2(1066.03, 449.635)
+
+[node name="Fast_Guy" parent="." instance=ExtResource("11_idon1")]
+position = Vector2(1066.03, 449.635)
+
+[node name="Medic_Guy" parent="." instance=ExtResource("12_7bo6s")]
+position = Vector2(1066.03, 449.635)
+
+[node name="Everything_Guy" parent="." instance=ExtResource("13_p4s0y")]
+position = Vector2(1066.03, 449.635)

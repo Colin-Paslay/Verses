@@ -2,8 +2,6 @@ extends CharacterBody2D
 @onready var global = get_node("/root/Global")
 @onready var Red_Guy = "res://red_guy.tscn"
 @onready var slots = $"AnimatedSprite2D/Speed Slots".get_children()
-@onready var speed_range = randi_range(1, 4)
-@onready var check = 1
 @onready var slot_check = 0
 func _ready():
 	var HP = 100
@@ -33,16 +31,7 @@ func _ready():
 	var amp_blunt = 1
 	var amp_pierce = 1
 	var amp_resonance = 1
-func _physics_process(delta):
-	if global.turnstart == true and check == 1:
-		for slot in slots:
-			speed_range = randi_range(1, 8)
-			slot.text = str(speed_range)
-		check = 0
-	elif global.turnstart == false and check == 0:
-		check = 1
-	else:
-		pass
+
 func _on_slot_1_pressed():
 	if global.turnstart == true and $CanvasLayer/Red_Guy.hidden:
 		$CanvasLayer/Red_Guy.show()
@@ -56,3 +45,6 @@ func _on_slot_3_pressed():
 		$CanvasLayer/Red_Guy.show()
 		slot_check = 3
 
+func _on_p_1_group_turnstart():
+	for slot in slots:
+		slot.text = str(randi_range(1, 8))
